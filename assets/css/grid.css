@@ -1,0 +1,31 @@
+.cell-label{
+	position: absolute !important;
+}
+.cell-label:nth-child(1){
+    top: 10pc;
+    left: 27pc;
+}
+.cell-label:nth-child(2){
+    top: 10pc;
+    left: 30pc;
+}
+.cell-label:nth-child(3){
+    top: 10pc;
+    left: 33pc;
+}
+.cell-label:nth-child(4){
+    top: 13pc;
+    left: 27pc;
+}
+.cell-label:nth-child(5){
+    top: 11pc;
+    left: 63pc;
+}
+.cell-label:nth-child(6){
+    top: 11pc;
+    left: 66pc;
+}
+.cell-label:nth-child(7){
+    top: 11pc;
+    left: 69pc;
+}

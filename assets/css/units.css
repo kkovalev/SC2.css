@@ -1,0 +1,6 @@
+/* Юнит */
+label.unit{
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-radius: 5px;
+}

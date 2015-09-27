@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Cache-Control" content="no-cache" />
+	<meta charset="UTF-8">
+	<title>StarCraft II: CSS</title>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<div id="wrapper">
+
+	<!-- Состояние -->
+		<!-- Дефолтные состояния -->
+		<input type="radio" name="button-level-2" id="default-state-level-2">
+		<input type="radio" name="button-level-1" id="default-state-level-1">
+		<input type="radio" name="unit" id="default-state-unit">
+
+		<!-- Кнопки -->
+			<!-- Нажата кнопка выбора построек -->
+			<input class="state build-button probe" type="radio" name="button-level-1" id="build-button">
+			<!-- Для постройки выбран нексус -->
+			<input class="state build-nexus start-build" type="radio" name="button-level-2" id="build-nexus">
+			<!-- Постройка пробок -->
+			<input class="state build-probe-1" type="checkbox" id="build-probe-1">
+			<input class="state build-probe-2" type="checkbox" id="build-probe-2">
+			<input class="state build-probe-3" type="checkbox" id="build-probe-3">
+			<input class="state build-probe-4" type="checkbox" id="build-probe-4">
+			<input class="state build-probe-5" type="checkbox" id="build-probe-5">
+		<!-- /Кнопки -->
+
+
+		<!-- Юниты -->
+			<input class="state unit probe" type="radio" name="unit" id="start-probe">
+			<input class="state unit nexus" type="radio" name="unit" id="nexus-select">
+		<!-- /Юниты -->
+
+	<!-- /Состояние -->
+
+
+	<div class="bg" id="map">
+
+
+
+
+
+
+		<!-- Сетка -->
+			<!-- Ячейка -->
+			<div class="cell-label">
+				<!-- Нексус -->
+				<label for="cell_1_nexus" class="nexus status unit">
+					<span class="inner"></span>
+				</label>
+				<input type="checkbox" id="cell_1_nexus" class="cell-state">
+				<label class="view nexus unit" for="nexus-select">
+					<!-- Сброс -->
+<!-- 					<label for="default-state-level-2" class="reset">
+						<label for="default-state-level-1" class="reset">
+							<label for="default-state-unit" class="reset"></label>
+						</label>
+					</label> -->
+					<!-- /Сброс -->
+					<div class="probes">
+						<div class="probe"></div>
+						<div class="probe"></div>
+						<div class="probe"></div>
+						<div class="probe"></div>
+						<div class="probe"></div>
+					</div>
+				</label>
+			</div>
+			<!-- /Ячейка -->
+			<!-- Ячейка -->
+			<div class="cell-label">
+				<!-- Нексус -->
+				<label for="cell_2_nexus" class="nexus status unit">
+					<span class="inner"></span>
+				</label>
+				<input type="checkbox" id="cell_2_nexus" class="cell-state">
+				<label class="view nexus unit" for="nexus-select">
+					<!-- Сброс -->
+<!-- 					<label for="default-state-level-2" class="reset">
+						<label for="default-state-level-1" class="reset">
+							<label for="default-state-unit" class="reset"></label>
+						</label>
+					</label> -->
+					<!-- /Сброс -->
+					<div class="probes">
+						<div class="probe"></div>
+						<div class="probe"></div>
+						<div class="probe"></div>
+						<div class="probe"></div>
+						<div class="probe"></div>
+					</div>
+				</label>
+			</div>
+			<!-- /Ячейка -->
+			<!-- Ячейка -->
+			<div class="cell-label">
+				<!-- Нексус -->
+				<label for="cell_3_nexus" class="nexus status unit">
+					<span class="inner"></span>
+				</label>
+				<input type="checkbox" id="cell_3_nexus" class="cell-state">
+				<label class="view nexus unit" for="nexus-select">
+					<!-- Сброс -->
+<!-- 					<label for="default-state-level-2" class="reset">
+						<label for="default-state-level-1" class="reset">
+							<label for="default-state-unit" class="reset"></label>
+						</label>
+					</label> -->
+					<!-- /Сброс -->
+					<div class="probes">
+						<div class="probe"></div>
+						<div class="probe"></div>
+						<div class="probe"></div>
+						<div class="probe"></div>
+						<div class="probe"></div>
+					</div>
+				</label>
+			</div>
+			<!-- /Ячейка -->
+			<!-- Ячейка -->
+			<div class="cell-label">
+				<!-- Нексус -->
+				<label for="cell_4_nexus" class="nexus status unit">
+					<span class="inner"></span>
+				</label>
+				<input type="checkbox" id="cell_4_nexus" class="cell-state">
+				<label class="view nexus unit" for="nexus-select">
+					<!-- Сброс -->
+<!-- 					<label for="default-state-level-2" class="reset">
+						<label for="default-state-level-1" class="reset">
+							<label for="default-state-unit" class="reset"></label>
+						</label>
+					</label> -->
+					<!-- /Сброс -->
+					<div class="probes">
+						<div class="probe"></div>
+						<div class="probe"></div>
+						<div class="probe"></div>
+						<div class="probe"></div>
+						<div class="probe"></div>
+					</div>
+				</label>
+			</div>
+			<!-- /Ячейка -->
+			<!-- Ячейка -->
+			<div class="cell-label">
+				<!-- Нексус -->
+				<label for="cell_5_nexus" class="nexus status unit">
+					<span class="inner"></span>
+				</label>
+				<input type="checkbox" id="cell_5_nexus" class="cell-state">
+				<label class="view nexus unit" for="nexus-select">
+					<!-- Сброс -->
+<!-- 					<label for="default-state-level-2" class="reset">
+						<label for="default-state-level-1" class="reset">
+							<label for="default-state-unit" class="reset"></label>
+						</label>
+					</label> -->
+					<!-- /Сброс -->
+					<div class="probes">
+						<div class="probe"></div>
+						<div class="probe"></div>
+						<div class="probe"></div>
+						<div class="probe"></div>
+						<div class="probe"></div>
+					</div>
+				</label>
+			</div>
+			<!-- /Ячейка -->
+			<!-- Ячейка -->
+			<div class="cell-label">
+				<!-- Нексус -->
+				<label for="cell_6_nexus" class="nexus status unit">
+					<span class="inner"></span>
+				</label>
+				<input type="checkbox" id="cell_6_nexus" class="cell-state">
+				<label class="view nexus unit" for="nexus-select">
+					<!-- Сброс -->
+<!-- 					<label for="default-state-level-2" class="reset">
+						<label for="default-state-level-1" class="reset">
+							<label for="default-state-unit" class="reset"></label>
+						</label>
+					</label> -->
+					<!-- /Сброс -->
+					<div class="probes">
+						<div class="probe"></div>
+						<div class="probe"></div>
+						<div class="probe"></div>
+						<div class="probe"></div>
+						<div class="probe"></div>
+					</div>
+				</label>
+			</div>
+			<!-- /Ячейка -->
+			<!-- Ячейка -->
+			<div class="cell-label">
+				<!-- Нексус -->
+				<label for="cell_7_nexus" class="nexus status unit">
+					<span class="inner"></span>
+				</label>
+				<input type="checkbox" id="cell_7_nexus" class="cell-state">
+				<label class="view nexus unit" for="nexus-select">
+					<!-- Сброс -->
+<!-- 					<label for="default-state-level-2" class="reset">
+						<label for="default-state-level-1" class="reset">
+							<label for="default-state-unit" class="reset"></label>
+						</label>
+					</label> -->
+					<!-- /Сброс -->
+					<div class="probes">
+						<div class="probe"></div>
+						<div class="probe"></div>
+						<div class="probe"></div>
+						<div class="probe"></div>
+						<div class="probe"></div>
+					</div>
+				</label>
+			</div>
+			<!-- /Ячейка -->
+
+		<!-- /Сетка -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- Стартовая пробка -->
+		<label for="start-probe" id="start-probe-label" class="unit"></label>
+		<!-- /Стартовая пробка -->
+
+	</div>
+
+
+
+
+	<!-- Панель -->
+	<div id="panel">
+		<div class="actions">
+
+			<!-- Пробка -->
+			<div class="probe">
+				<label for="build-button" class="build button"></label>
+
+				<!-- Субменю постройки -->
+				<div class="buildList submenu">
+					<label for="build-nexus" class="button nexus"></label>
+				</div>
+				<!-- /Субменю постройки -->
+			</div>
+			<!-- /Пробка -->
+
+			<!-- Нексус -->
+			<div class="nexus">
+				<label for="build-probe-5" class="build-probe button"></label>
+				<label for="build-probe-4" class="build-probe button"></label>
+				<label for="build-probe-3" class="build-probe button"></label>
+				<label for="build-probe-2" class="build-probe button"></label>
+				<label for="build-probe-1" class="build-probe button"></label>
+			</div>
+			<!-- /Нексус -->
+
+		</div>
+
+		<div class="state">
+			<div class="probe train-unit">
+				<div class="progress"></div>
+			</div>
+			<div class="probe train-unit">
+				<div class="progress"></div>
+			</div>
+			<div class="probe train-unit">
+				<div class="progress"></div>
+			</div>
+			<div class="probe train-unit">
+				<div class="progress"></div>
+			</div>
+			<div class="probe train-unit">
+				<div class="progress"></div>
+			</div>
+		</div>
+	</div>
+	<!-- /Панель -->
+
+<div class="final">
+	<div class="probe"></div>
+	<div class="probe"></div>
+	<div class="probe"></div>
+	<div class="probe"></div>
+	<div class="probe"></div>
+	<div class="probe"></div>
+</div>
+
+</div>
+
+</body>
+</html>

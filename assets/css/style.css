@@ -1,0 +1,89 @@
+body{
+	margin: 0;
+	padding: 0;
+    user-select: none;
+}
+#wrapper{
+    margin: 0 auto;
+    position: relative;
+    overflow: scroll;
+    width: 1280px;
+    height: 700px;  
+}
+#wrapper .bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 1;
+    overflow: scroll;
+}
+#wrapper .bg:before{
+    background: url(../img/resp.jpg) top left;
+    width: 1500px;
+    height: 700px;
+    content: '';
+    background-size: 100%;
+    position: absolute;
+}
+input.state{
+    position: fixed;
+}
+.cell-label,
+.subview{
+    margin: -1px;
+}
+label.reset{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    opacity: 0;
+    top:0;
+    left:0;
+}
+#resources{}
+#resources:before{
+    content: '';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

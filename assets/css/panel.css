@@ -1,0 +1,180 @@
+/* Панель приказов */
+#panel .actions > *{
+	display: none;
+    position: absolute;
+    right: 14px;
+    bottom: 10px;
+    height: 148px;
+    width: 240px;
+    color: #fff;
+    z-index: 1;
+    background-color: #000;
+}
+.state.unit.probe:checked ~ #panel .actions .probe{
+	display: block;
+}
+#panel .actions .button{
+    display: inline-block;
+    border-radius: 4px;
+    width: 68px;
+    height: 68px;
+    margin: 2px;
+}
+#panel .actions .button.build{
+    background: url(../img/build-button.png);
+}
+#panel{
+    background: url(../img/panel.png) no-repeat bottom center;
+    background-size: 100%;
+    height: 240px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 999;
+}
+#panel .actions > * > .submenu{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 148px;
+    width: 240px;
+    color: #fff;
+    z-index: 1;
+    background-color: #000;
+}
+.state.build-button.probe:checked ~ #panel .buildList{
+    display: block;
+}
+#panel .buildList .nexus{
+    background: url(../img/nexus.png);
+    background-size: 100%;
+}
+#panel .submenu .button{
+    border: 1px solid #2754B8;
+    border-radius: 4px;
+}
+.state.unit.nexus:checked ~ #panel .actions .nexus{
+    display: block;
+}
+#panel .actions .nexus .build-probe{
+    background: url(../img/probe.png) center center no-repeat;
+    background-size: 50px;
+    border: 1px solid #2754B8;
+    border-radius: 4px;
+    position: absolute;
+}
+.state.build-probe-1:checked ~ #panel .actions .nexus .build-probe:nth-child(5){
+    display: none;
+}
+.state.build-probe-2:checked ~ #panel .actions .nexus .build-probe:nth-child(4){
+    display: none;
+}
+.state.build-probe-3:checked ~ #panel .actions .nexus .build-probe:nth-child(3){
+    display: none;
+}
+.state.build-probe-4:checked ~ #panel .actions .nexus .build-probe:nth-child(2){
+    display: none;
+}
+.state.build-probe-5:checked ~ #panel .actions .nexus .build-probe:nth-child(1){
+    display: none;
+}
+#panel .state{
+    position: absolute;
+    bottom: 20px;
+    left: 250px;
+    height: 100px;
+    width: 650px;
+}
+#panel .state .probe{
+    background: url(../img/probe.png) center center no-repeat;
+    background-size: 50px;
+    border: 1px solid #2754B8;
+    border-radius: 4px;
+    width: 0;
+    height: 68px;
+    margin: 2px;
+    display: inline-block;
+    opacity: 0;
+    z-index: -1;
+    position: relative;
+}
+.state.build-probe-1:checked ~ #panel .state .probe:nth-child(1){
+    animation:train 3s linear;
+}
+.state.build-probe-2:checked ~ #panel .state .probe:nth-child(2){
+    animation:train 3s linear;
+}
+.state.build-probe-3:checked ~ #panel .state .probe:nth-child(3){
+    animation:train 3s linear;
+}
+.state.build-probe-4:checked ~ #panel .state .probe:nth-child(4){
+    animation:train 3s linear;
+}
+.state.build-probe-5:checked ~ #panel .state .probe:nth-child(5){
+    animation:train 3s linear;
+}
+#panel .state .train-unit .progress{
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    background: #80BCE0;
+    width: 0;
+    transition:all 3s linear;
+}
+.state.build-probe-1:checked ~ #panel .state .probe:nth-child(1) .progress{
+    width: 100%;
+}
+.state.build-probe-2:checked ~ #panel .state .probe:nth-child(2) .progress{
+    width: 100%;
+}
+.state.build-probe-3:checked ~ #panel .state .probe:nth-child(3) .progress{
+    width: 100%;
+}
+.state.build-probe-4:checked ~ #panel .state .probe:nth-child(4) .progress{
+    width: 100%;
+}
+.state.build-probe-5:checked ~ #panel .state .probe:nth-child(5) .progress{
+    width: 100%;
+}
+
+.state.build-probe-1:checked ~ #map .cell-label .view.nexus .probes .probe:nth-child(1){
+    display: inline-block;
+    animation:pre-train 3s linear;
+}
+.state.build-probe-2:checked ~ #map .cell-label .view.nexus .probes .probe:nth-child(2){
+    display: inline-block;
+    animation:pre-train 3s linear;
+}
+.state.build-probe-3:checked ~ #map .cell-label .view.nexus .probes .probe:nth-child(3){
+    display: inline-block;
+    animation:pre-train 3s linear;
+}
+.state.build-probe-4:checked ~ #map .cell-label .view.nexus .probes .probe:nth-child(4){
+    display: inline-block;
+    animation:pre-train 3s linear;
+}
+.state.build-probe-5:checked ~ #map .cell-label .view.nexus .probes .probe:nth-child(5){
+    display: inline-block;
+    animation:pre-train 3s linear;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

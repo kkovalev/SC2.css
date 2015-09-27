@@ -1,0 +1,97 @@
+/* Сетка */
+.cell-label{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    z-index: calc(3 - counter(nexus) * 10);
+    position: relative;
+}
+.cell{
+    display: none;
+}
+.cell-label > *{
+	display: none;
+}
+#map .cell-label label.status{
+	height: 100%;
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	z-index: 2;
+}
+#map .cell-label .nexus .inner{
+	background: url(../img/nexus.png);
+	width: 150px;
+    height: 150px;
+    background-size: 100%;
+	opacity: 0.9;
+	pointer-events: none;
+	display: block;
+}
+.state.start-build:checked ~ #map .cell-label{
+	cursor: none;
+}
+#map .cell-label .cell-state:checked + .view{
+	display: block;
+}
+#map .cell-label .view.nexus{
+	background: url(../img/nexus.png);
+    width: 150px;
+    height: 150px;
+    background-size: 100%;
+}
+#map .cell-label .view{
+	z-index: 5;
+	cursor: default;
+	position: relative;
+}
+#map .cell-label .view.nexus .probes{
+    position: absolute;
+    bottom: -20px;
+    height: 50px;
+    width: 150px;
+}
+#map .cell-label .view.nexus .probes .probe{
+    background: url(../img/probe.png) center center no-repeat;
+    width: 50px;
+    height: 50px;
+    z-index: 5;
+    background-size: 100%;
+    display: inline-block;
+    margin: 0 -12px;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

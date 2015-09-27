@@ -1,0 +1,29 @@
+@keyframes train{
+	0%,100%{
+		opacity: 1;
+		z-index: 1;
+		width: 68px;
+	}
+}
+@keyframes pre-train{
+	0%,100%{
+		opacity: 0;
+		width: 0;
+	}
+}
+@keyframes probe{
+	50%{
+		top:-4px;
+	}
+}
+@keyframes probe-small{
+	50%{
+		margin-top:-2px;
+	}
+}
+@keyframes final-delay{
+	0%, 100%{
+		opacity: 0;
+		z-index: -10;
+	}
+}

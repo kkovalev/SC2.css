@@ -1,0 +1,76 @@
+#start-probe-label{
+	display: block;
+    background: url(../img/probe.png) no-repeat center center;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 5;
+    background-size: 100%;
+    left: 390px;
+    top: 220px;
+    animation: probe-small 2s linear infinite;
+}
+.state.unit.probe:checked ~ #map #start-probe-label{
+    border-radius: 6px;
+    border-bottom-color:lawngreen;
+    border-top-color:lawngreen;
+}
+.state.unit.nexus:checked ~ #map .cell-label .view.nexus{
+    border-radius: 6px;
+    border-bottom-color:lawngreen;
+    border-top-color:lawngreen;
+}
+
+
+.final{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: -10;
+    position: fixed;
+    display: block;
+    text-align: center;
+    padding-top: 100px;
+    opacity: 0;
+}
+.final .probe{
+    background: url(../img/happy_probe.png);
+    width: 245px;
+    height: 333px;
+    display: inline-block;
+    margin: 0 -50px;
+    position: relative;
+}
+.final .probe:first-child{
+    margin-right: 50px;
+    transform: scale(-1, 1);
+}
+.final .probe:nth-child(1){
+    animation: probe 2s linear infinite;
+}
+.final .probe:nth-child(2){
+    animation: probe 2s linear infinite 1s;
+}
+.final .probe:nth-child(3){
+    animation: probe 2s linear infinite 1.5s;
+}
+.final .probe:nth-child(4){
+    animation: probe 2s linear infinite 2s;
+}
+.final .probe:nth-child(5){
+    animation: probe 2s linear infinite 2.5s;
+}
+
+
+
+
+.state.build-probe-5:checked ~ .final{
+    animation: final-delay 5s;
+    z-index: 99999;
+    opacity: 1;
+}
+
+
+

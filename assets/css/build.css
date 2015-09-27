@@ -1,0 +1,9 @@
+.state.build-nexus:checked ~ #map{
+    cursor: url(../img/nexus-prebuild_100.png), text;
+}
+.state.build-nexus:checked ~ #map .cell-label:hover label.nexus.status{
+	display: block;
+}
+.state.unit.nexus:checked ~ #map{
+    cursor: default;
+}
